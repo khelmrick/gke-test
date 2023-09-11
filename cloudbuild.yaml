@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/tactical-snow-397315/timestamp1', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/tactical-snow-397315/timestamp1']
+images: ['gcr.io/tactical-snow-397315/timestamp1']
